@@ -1,12 +1,13 @@
 {
   "manifest_version": 2,
   "name": "SO Kotlin Beautify",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Styles SO Overview Page",
   "content_scripts": [
     {
       "matches": [
-        "*://stackoverflow.com/search?tab=newest&q=kotlin"
+        "*://stackoverflow.com/search?*kotlin*",
+        "*://stackoverflow.com/questions/tagged/*kotlin*"
       ],
       "js": [
         "build/classes/kotlin/main/min/kotlin.js",

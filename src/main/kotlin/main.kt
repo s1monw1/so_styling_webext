@@ -18,6 +18,8 @@ fun main(args: Array<String>) {
             element.style.backgroundColor = "#FFFFE0"
         }
     }
+    val dyn: dynamic ="String"
+    dyn.thisMethodDoesNotExist(1,2,3)
 }
 
 fun HTMLElement.greyOut() {
